@@ -54,11 +54,11 @@
                 };
 
                 extra_one {
-                  status = "reserverd"
+                  status = "reserved";
                 };
                 
                 extra_two {
-                  status = "reserverd"
+                  status = "reserved";
                 };
         };
 };
