@@ -60,5 +60,9 @@
                 extra_two {
                   status = "reserved";
                 };
+                
+                extra_three {
+                  status = "reserved";
+                };
         };
 };
