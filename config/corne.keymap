@@ -23,7 +23,7 @@
    &kp CAPSLOCK   &kp Q       &kp W      &kp E      &kp R      &kp T   &kp Y &kp U       &kp I          &kp O        &kp P            &kp BSPC
    &kp LCTRL      &mt LCTRL A &mt LALT S &mt LGUI D &mt LSFT F &kp G   &kp H &mt RSFT J  &mt LGUI K     &mt LALT L   &mt RCTRL SCOLON &kp SQT
    &kp LSHFT      &kp Z       &kp X      &kp C      &kp V      &kp B   &kp N &kp M       &kp COMMA      &kp DOT      &kp SLASH        &kp ESC
-                                    &lt 1 TAB   &lt 2 ESC  &lt 4 ENTER    &lt 3 BSPC  &kp SPACE  &kp RSFT
+                                    &lt 1 TAB   &lt 2 ESC  &lt 4 ENTER    &lt 3 BSPC  &kp SPACE  &studio_unlock
                         >;
                 };
                 layer_1 {
@@ -83,4 +83,3 @@
                 };
         };
 };
-
