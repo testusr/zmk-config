@@ -86,10 +86,10 @@
 
         layer_2 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PLUS      &kp N7  &kp N8     &kp N9  &kp FSLH     &trans
-&trans  &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT     &trans          &kp MINUS     &kp N4  &kp N5     &kp N6  &kp EQUAL    &trans
-&trans  &macro_3      &macro_2      &macro_0      &macro_1      &trans          &kp ASTERISK  &kp N1  &kp N2     &kp N3  &kp PERCENT  &trans
-                                    &trans        &trans        &trans          &kp BSPC      &kp N0  &kp ENTER
+&bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PLUS      &kp N7  &kp N8     &kp N9  &kp FSLH     &trans
+&trans         &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT     &trans          &kp MINUS     &kp N4  &kp N5     &kp N6  &kp EQUAL    &trans
+&studio_unlock &macro_3      &macro_2      &macro_0      &macro_1      &trans          &kp ASTERISK  &kp N1  &kp N2     &kp N3  &kp PERCENT  &trans
+                             &trans        &trans        &trans        &kp BSPC        &kp N0        &kp ENTER
             >;
         };
 
