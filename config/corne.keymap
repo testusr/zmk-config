@@ -12,7 +12,7 @@
             tapping-term-ms = <150>;           // Increased for reliability
             flavor = "hold-preferred";        // Prioritize hold for modifiers
             hold-while-undecided = <0>;       // Avoid premature signals
-            hold-trigger-on-release = <1>;    // Modifier on release for macOS
+            hold-trigger-on-release;    // Modifier on release for macOS
             bindings = <&kp>, <&kp>;
         };
     };
