@@ -4,9 +4,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
     flavor = "hold-preferred";
-    hold-while-undecided-linger;
 };
 
 / {
@@ -69,10 +68,10 @@
 
         layer_0 {
             bindings = <
-&kp CAPS   &kp Q  &kp W  &kp E      &kp R      &kp T          &kp Y            &kp U      &kp I           &kp O    &kp P     &kp BSLH
-&kp LCTRL  &none  &none  &none      &none      &kp G          &kp H            &none      &none           &none    &none     &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B          &kp N            &kp M      &kp COMMA       &kp DOT  &kp FSLH  &kp MINUS
-                         &lt 1 TAB  &lt 2 ESC  &lt 4 ENTER    &lt 3 BACKSPACE  &kp SPACE  &studio_unlock
+&kp CAPS   &kp Q               &kp W           &kp E           &kp R             &kp T          &kp Y            &kp U              &kp I            &kp O            &kp P                   &kp BSLH
+&kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G          &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp APOS
+&kp LSHFT  &kp Z               &kp X           &kp C           &kp V             &kp B          &kp N            &kp M              &kp COMMA        &kp DOT          &kp FSLH                &kp MINUS
+                                               &lt 1 TAB       &lt 2 ESC         &lt 4 ENTER    &lt 3 BACKSPACE  &kp SPACE          &studio_unlock
             >;
         };
 
