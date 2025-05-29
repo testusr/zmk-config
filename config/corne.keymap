@@ -7,8 +7,11 @@
     tapping-term-ms = <200>;
     flavor = "balanced";
 };
-
+&soft_off {
+    hold-time-ms = <3000>; // Only turn off it the key is held for 3  :w seconds or longer.
+};
 / {
+
     macros {
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
@@ -95,10 +98,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans    &trans         &trans  &kp C_VOLUME_UP      &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &kp END  &kp HOME  &kp PAGE_DOWN  &trans  &kp C_MUTE           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans   &trans    &trans         &trans  &kp C_VOLUME_DOWN    &trans          &trans          &trans        &trans           &trans  &trans
-                           &trans         &trans  &trans               &trans          &trans          &trans
+&soft_off  &trans   &trans    &trans         &trans  &kp C_VOLUME_UP      &trans          &trans          &trans        &trans           &trans  &trans
+&trans     &kp END  &kp HOME  &kp PAGE_DOWN  &trans  &kp C_MUTE           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans     &trans   &trans    &trans         &trans  &kp C_VOLUME_DOWN    &trans          &trans          &trans        &trans           &trans  &trans
+                              &trans         &trans  &trans               &trans          &trans          &trans
             >;
         };
 
