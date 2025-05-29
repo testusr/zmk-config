@@ -3,9 +3,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&mt {
+    bindings = <&kp>, <&kp>;
+
+    tapping-term-ms = <128>;
+    flavor = "hold-preferred";
+    hold-while-undecided;
+    hold-trigger-on-release;
+};
 
 / {
-    macros {
+    behaviors {
         mt: mod-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP";
@@ -16,7 +24,9 @@
             hold-trigger-on-release = <1>;    // Modifier on release for macOS
             bindings = <&kp>, <&kp>;
         };
+    };
 
+    macros {
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
