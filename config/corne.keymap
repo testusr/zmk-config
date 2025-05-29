@@ -3,20 +3,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/ {
-    behaviors {
-        mt: mod-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;           // Increased for reliability
-            flavor = "hold-preferred";        // Prioritize hold for modifiers
-            hold-while-undecided = <0>;       // Avoid premature signals
-            hold-trigger-on-release;    // Modifier on release for macOS
-            bindings = <&kp>, <&kp>;
-        };
-    };
+&mt {
+    tapping-term-ms = <150>;
+    flavor = "hold-preferred";
+    hold-while-undecided-linger;
+};
 
+/ {
     macros {
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
@@ -76,10 +69,10 @@
 
         layer_0 {
             bindings = <
-&kp CAPS   &kp Q        &kp W       &kp E       &kp R        &kp T          &kp Y            &kp U        &kp I           &kp O       &kp P           &kp BSLH
-&kp LCTRL  &mt LCTRL A  &mt LALT S  &mt LGUI D  &mt LSHFT F  &kp G          &kp H            &mt RSHFT J  &mt RGUI K      &mt RALT L  &mt RCTRL SEMI  &kp APOS
-&kp LSHFT  &kp Z        &kp X       &kp C       &kp V        &kp B          &kp N            &kp M        &kp COMMA       &kp DOT     &kp FSLH        &kp MINUS
-                                    &lt 1 TAB   &lt 2 ESC    &lt 4 ENTER    &lt 3 BACKSPACE  &kp SPACE    &studio_unlock
+&kp CAPS   &kp Q  &kp W  &kp E      &kp R      &kp T          &kp Y            &kp U      &kp I           &kp O    &kp P     &kp BSLH
+&kp LCTRL  &none  &none  &none      &none      &kp G          &kp H            &none      &none           &none    &none     &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B          &kp N            &kp M      &kp COMMA       &kp DOT  &kp FSLH  &kp MINUS
+                         &lt 1 TAB  &lt 2 ESC  &lt 4 ENTER    &lt 3 BACKSPACE  &kp SPACE  &studio_unlock
             >;
         };
 
