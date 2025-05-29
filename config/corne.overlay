@@ -1,0 +1,8 @@
+/ {
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;  // Allows wake from deep sleep on any keypress
+    };
+};
+
+
