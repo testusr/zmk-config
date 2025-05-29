@@ -3,29 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mt {
-    bindings = <&kp>, <&kp>;
-
-    tapping-term-ms = <128>;
-    flavor = "hold-preferred";
-    hold-while-undecided;
-    hold-trigger-on-release;
-};
-
 / {
-    behaviors {
-        mt: mod-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;           // Increased for reliability
-            flavor = "hold-preferred";        // Prioritize hold for modifiers
-            hold-while-undecided = <0>;       // Avoid premature signals
-            hold-trigger-on-release = <1>;    // Modifier on release for macOS
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     macros {
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
@@ -77,6 +55,18 @@
         backspace2 {
             bindings = <&kp BACKSPACE>;
             key-positions = <6 7>;
+        };
+    };
+
+    behaviors {
+        mt: mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            hold-trigger-on-release;
         };
     };
 
