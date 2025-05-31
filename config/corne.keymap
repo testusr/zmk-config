@@ -108,7 +108,7 @@
         layer_4 {
             bindings = <
 &soft_off  &trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp GRAVE  &kp LBKT              &kp RBKT               &kp BSLH   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp APOS   &transj
+&trans     &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp APOS   &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &trans     &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &trans
                         &trans  &trans  &trans    &trans     &trans     &trans
             >;
